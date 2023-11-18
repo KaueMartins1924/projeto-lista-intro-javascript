@@ -51,6 +51,7 @@ function imprimeTresCoresFavoritas() {
   // implemente sua lógica aqui
 
 }
+const cores[]
 
 // EXERCÍCIO 06
 function retornaStringEmMaiuscula(string) {
@@ -96,9 +97,18 @@ function checaIgualdadeDesconsiderandoCase(string1, string2) {
 
 // EXERCÍCIO 13
 function checaRenovacaoRG() {
-  // implemente sua lógica aqui
-
+  let anoAtual = prompt('Qual o ano atual?')
+  const anoNascimento = prompt('Qual o seu ano de nascimento?')
+  const emissaoRg = prompt('Em que ano foi emitido seu RG?')
+  let idade = (anoAtual-anoNascimento)
+  let idadeRg = (anoAtual-emissaoRg)
+  let verificar1 = (idade<=20&&idadeRg>=5)
+  let verificar2 = (idade>20&&idade<=50&&idadeRg>=10)
+  let verificar3 =(idade>50&&idadeRg>15)
+  let resultado = verificar1 || verificar2 || verificar3
+  console.log (resultado)
 }
+checaRenovacaoRG()
 
 // EXERCÍCIO 14
 function checaAnoBissexto(ano) {
