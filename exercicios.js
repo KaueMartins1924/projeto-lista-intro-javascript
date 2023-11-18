@@ -24,8 +24,10 @@ function calculaAreaRetangulo(altura, largura) {
 }
 
 // EXERCÍCIO 02
-function imprimeIdade() {
-
+function imprimeIdade(anoAtual, anoNascimento) {
+  anoAtual = prompt ("Digite o ano atual:")
+  anoNascimento =  prompt ("Digite o ano do seu nascimento:")
+  console.log ((anoAtual-anoNascimento))
 }
 
 // EXERCÍCIO 03
