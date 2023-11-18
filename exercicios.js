@@ -48,10 +48,13 @@ function imprimeInformacoesUsuario(nome, idade, email) {
 
 // EXERCÍCIO 05
 function imprimeTresCoresFavoritas() {
-  // implemente sua lógica aqui
+  let cores = ["", "", ""]
+  cores[0] = prompt("Digite a cor 1:")
+  cores[1] = prompt("Digite a cor 2:")
+  cores[2] = prompt("Digite a cor 3:")
+  console.log(cores)
 
 }
-const cores[]
 
 // EXERCÍCIO 06
 function retornaStringEmMaiuscula(string) {
@@ -85,8 +88,11 @@ function retornaUltimoElemento(array) {
 
 // EXERCÍCIO 11
 function trocaPrimeiroEUltimo(array) {
-  // implemente sua lógica aqui
-
+  let remover1 = array.shift() 
+  let remover5 = array.pop()
+  let adicionar5 = array.unshift(5)
+  let adicionar1 = array.push(1)
+  console.log(array)
 }
 
 // EXERCÍCIO 12
@@ -108,7 +114,6 @@ function checaRenovacaoRG() {
   let resultado = verificar1 || verificar2 || verificar3
   console.log (resultado)
 }
-checaRenovacaoRG()
 
 // EXERCÍCIO 14
 function checaAnoBissexto(ano) {
