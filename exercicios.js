@@ -65,8 +65,9 @@ function retornaStringEmMaiuscula(string) {
 
 // EXERCÍCIO 07
 function calculaIngressosEspetaculo(custo, valorIngresso) {
-  // implemente sua lógica aqui
-
+  const ingressosNecessarios = custo/valorIngresso
+  console.log (ingressosNecessarios)
+  return ingressosNecessarios
 }
 
 // EXERCÍCIO 08
@@ -91,8 +92,8 @@ function retornaUltimoElemento(array) {
 function trocaPrimeiroEUltimo(array) {
   let remover1 = array.shift() 
   let remover5 = array.pop()
-  let adicionar5 = array.unshift(5)
-  let adicionar1 = array.push(1)
+  let adicionar5 = array.unshift()
+  let adicionar1 = array.push()
   console.log(array)
 }
 
