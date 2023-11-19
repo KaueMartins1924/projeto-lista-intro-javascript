@@ -88,11 +88,14 @@ function retornaUltimoElemento(array) {
 
 // EXERCÍCIO 11
 function trocaPrimeiroEUltimo(array) {
-  let remover1 = array.shift() 
-  let remover5 = array.pop()
-  let adicionar5 = array.unshift()
-  let adicionar1 = array.push()
-  console.log(array)
+  let stringComeco = array[array.length -1]
+  let stringfim = array[0]
+  array.pop()
+  array.shift()
+  array.unshift(stringComeco)
+  array.push(stringfim)
+  console.log (array)
+  return array
 }
 
 // EXERCÍCIO 12
