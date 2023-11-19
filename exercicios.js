@@ -127,7 +127,10 @@ function checaAnoBissexto(ano) {
 }
 
 // EXERCÍCIO 15
-function checaValidadeInscricaoLabenu() {
-  // implemente sua lógica aqui
-
+function checaValidadeInscricaoLabenu(idade, ensino, horario) {
+  idade = confirm ("Você tem mais de 18 anos?")
+  ensino = confirm ("Você possui ensino médio completo?")
+  horario = confirm ("Você possui disponibilidade exclusiva durante os horários do curso?")
+  const aprovado = idade && ensino && horario
+  console.log (aprovado)
 }
