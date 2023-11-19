@@ -82,7 +82,7 @@ function retornaPrimeiroElemento(array) {
 
 // EXERCÍCIO 10
 function retornaUltimoElemento(array) {
-  // implemente sua lógica aqui
+ return array[array.length-1]
 
 }
 
